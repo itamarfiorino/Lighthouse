@@ -151,6 +151,9 @@ figure {
 }
 figure img {
     vertical-align: top;
+    border:solid;
+    border-width: thick;
+    border-color: #A56396;
 }
 figure figcaption {
     text-align: center;
