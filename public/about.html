@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <script>
-    function changeSize() {
-      var size = document.getElementById("slider").value;
-      document.getElementById("circ").setAttribute("r", size);
-    }
-  </script>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
-</head>
+<title>About</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
-  <ul style>
-    <li id="Home"><a class="active"><center><input type="image" onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "100"></center></a></li>
-    <br><br><br><input type="button" width="100%" value="Canvas"><br><br>
-    <input style="button"type="button" width="100%" value="Pen Size"><br><br>
-    <input style="button"type="button" width="100%" value="Pen Color"><br><br>
-    <input style="button"type="button" width="100%" value="About"><br><br>
-  </ul>
-  <div style="margin-left:0px;padding:1px 16px;height:1000px;">
-    <div style="margin-left:100px;padding:1px 16px;height:1000px;">
-        <h1>Information</h1>
-        <h3>Purpose</h3>
-        Research has shown the benefits of drawing to those with health issues. We hope to help people with depression or anxiety and victims of sexual harassment and abuse to express themselves through art.
-        <h3>The Developers</h3>
-        <figure style="width:20%">
-          <img src="images/gautom.jpg" alt="Gautom" style="width:80%">
-          <figcaption>Gautom Das</figcaption>
-        </figure>
-        <figure style="width:20%">
-          <img src="images/itamar.jpg" alt="Itamar" style="width:80%">
-          <figcaption>Itamar Fiorino</figcaption>
-        </figure>
-        <figure style="width:20%">
-          <img src="images/prayag.jpg" alt="Prayag" style="width:80%">
-          <figcaption>Prayag Gordy</figcaption>
-        </figure>
-        <figure style="width:20%">
-          <img src="images/tarun.jpg" alt="Tarun" style="width:80%">
-          <figcaption>Tarun Mattikalli</figcaption>
-        </figure>
-      </div>
-      <input id="slider" type="range" min="1" max="31" oninput="changeSize();"><br><br><br>
-      <svg height="100" width="100">
-        <circle cx="50" cy="50" r="16" stroke="black" stroke-width="3" fill="black" id="circ">
-      </svg>
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="images/INFO IMAFE.png" width="1500" height="800">
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>Lighthouse is a website where those facing troubles and issues in their lives can find help. While traditional methods may work, drawing with and talking to someone who can relate is proven to be better. On Lighthouse, one can find instant relief by drawing with another person live and chatting with them about their issues.
+
+    </p>
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/itamar.jpg" alt="Itamar" style="width:100%">
+      <h3>Itamar Fiorino</h3>
+      <p class="w3-opacity"></p>
+      <p>Itamar is mexican.</p>
     </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/gautom.jpg" alt="Gautom" style="width:100%">
+      <h3>Gautom Das</h3>
+      <p class="w3-opacity"></p>
+      <p>Gautom is short.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/prayag.jpg" alt="Prayag" style="width:100%">
+      <h3>Prayag Gordy </h3>
+      <p class="w3-opacity"></p>
+      <p>Prayag is white.</p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/tarun.jpg" alt="Tarun" style="width:100%">
+      <h3>Tarun Mattikalli</h3>
+      <p class="w3-opacity"></p>
+      <p>Tarun is brown.</p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h3>
+    <p>Let's get in touch and talk about your and our next project.</p>
+    <form action="/action_page.php" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-button w3-black w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
 </body>
 </html>
