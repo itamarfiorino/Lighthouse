@@ -1,138 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+/* Popup container - can be anything you want */
 
-  <style>
-  /* Popup container - can be anything you want */
-  .popup {
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-  }
-
-  /* The actual popup */
-  .popup .popuptext {
-      visibility: hidden;
-      width: 160px;
-      background-color: #555;
-      color: #fff;
-      text-align: center;
-      border-radius: 6px;
-      padding: 8px 0;
-      position: absolute;
-      z-index: 1;
-      bottom: -40%;
-      left: 150%;
-      margin-left: -80px;
-  }
-
-  /* Popup arrow */
-  .popup .popuptext::after {
-      content: "";
-      position: absolute;
-      top: 40%;
-    https://www.w3schools.com/  left: -3%;
-      margin-left: -5px;
-      border-width: 5px;
-      border-style: solid;
-      border-color: #555 transparent transparent transparent;
-      transform: rotate(90deg);
-  }
-
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-      visibility: visible;
-      -webkit-animation: fadeIn 1s;
-      animation: fadeIn 1s;
-  }
-
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-  }
-
-  @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity:1 ;}
-  }
-  </style>
-
-
-
-
-
-
-  <script>
-
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
+/* The actual popup */
+.popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 50%;
+    left: 50%;
+    margin-left: -80px;
 }
-  </script>
+
+/* Popup arrow */
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+  https://www.w3schools.com/  left: -3%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(90deg);
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  if(popup.style.visibility == "visible"){
+    console.log("was visible");
+    popup.style.visibility='hidden';
+  }else{
+    console.log(popup.style.visibility);
+    popup.style.visibility='visible';
+  }
+}
+</script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 </head>
 <body>
-  <ul style padding="20px">
-    <li id="Home"><a class="active"><center><img  onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "100"></center></a></li>
-    <br><br><br><input type="button" width="100%" value="Canvas"><br><br>
-    <input style="button"type="button" width="100%" value="Pen Size"><br><br>
-    <input style="button"type="button" width="100%" value="Pen Color"><br><br>
-    <input style="button"type="button" width="100%" value="About"><br><br>
+  <ul style>
+    <li id="Home"><a class="active"><center><input type="image" onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "65"></center></a></li>
+    <input type="button" onClick="myFunction()" width="100%" value="Test"><br>
+    <input type="button" width="100%" value="Test"><br>
+    <input type="button" width="100%" value="Test"><br>
+    <input type="button" width="100%" value="Test"><br>
 
 
 
-    <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+
+  </ul>
+  <div id="mainbar" style="margin-left:0px;padding:1px 16px;height:1000px;">
+
     <span class="popuptext" id="myPopup">
 
-    A Simple Popup!
 
     <input name="Color Picker" type="color"/>
 
 
     </span>
-  </div>
 
-  </ul>
-  </ul>
-  <div style="margin-left:0px;padding:1px 16px;height:1000px;">
     <canvas id="drawing"></canvas>
-    <script src="/client.js"></script>
+    <!-- <script src="/client.js"></script> -->
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
