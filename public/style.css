@@ -85,12 +85,16 @@ li a:hover {
        display: block;
        background-color: #FFFFFF
     }
+    #button{
+      background: #fff;
+      
+    }
 /*for boxes*/
 .square {
     float:left;
     position: relative;
-    width: 15%;
-    padding-bottom : 15%; /* = width for a 1:1 aspect ratio */
+    width: 25%;
+    padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
     margin:5%;
     background-color:#A5A5A5;
     overflow:hidden;
@@ -98,8 +102,8 @@ li a:hover {
 }
 .content {
     position:absolute;
-    height:85%; /* = 100% - 2*5% padding */
-    width:85%; /* = 100% - 2*5% padding */
+    height:75%; /* = 100% - 2*5% padding */
+    width:75%; /* = 100% - 2*5% padding */
     padding: 7.5%;
     text-align: center;
 }

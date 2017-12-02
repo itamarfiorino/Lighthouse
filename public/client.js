@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       mouse.move = false;
     }
     mouse.pos_prev = {x: mouse.pos.x, y: mouse.pos.y};
-    setTimeout(mainLoop, 10);
+    setTimeout(mainLoop, 1);
   }
   mainLoop();
 });
