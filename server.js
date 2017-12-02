@@ -17,15 +17,15 @@ var io = socket(server);
 
 var line_history = {};
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/home.html');
+  res.sendFile(__dirname + '/index.html');
+});
+app.get('/about', function (req, res) {
+  res.sendFile(__dirname + '/public/about.html');
 });
 io.on('connection', function(socket){
   console.log("Connection " + socket.id);
-  console.log(line_history);
   for (var i in line_history) {
     for(var j in line_history[i]){
-      console.log(j);
-      console.log(line_history[i][j]);
       socket.emit('draw_line', { line: line_history[i][j], color: i} );
     }
   }

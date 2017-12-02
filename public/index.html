@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
+
   <script>
+
+
+  function myFunction() {
+  var popup = document.getElementById("myPopup");
+  if(popup.style.visibility == "visible"){
+    console.log("was visible");
+    popup.style.visibility='hidden';
+  }else{
+    console.log(popup.style.visibility);
+    popup.style.visibility='visible';
+  }
+}
 function on() {
   document.getElementById("overlay").style.display = "block";
   }
@@ -42,7 +57,8 @@ function doSomething() {
   }
 }
 </script>
-  <style>#overlay {
+  <style>
+  #overlay {
   position: fixed; /* Sit on top of the page content */
   display: none; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
@@ -79,6 +95,59 @@ function doSomething() {
   -ms-transform: translate(-50%,-50%);
   font-family: "Tahoma";
 }
+/* Popup container - can be anything you want */
+/* The actual popup */
+.popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 75%;
+    left: 33%;
+    margin-left: -80px;
+}
+/* Popup arrow */
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+  https://www.w3schools.com/  left: -3%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(90deg);
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+
+
+
+
+
+
+
+
 </style>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
@@ -91,10 +160,23 @@ function doSomething() {
   <ul style padding="20px">
     <li id="Home"><a class="active"><center><img  onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "100"></center></a></li>
     <br><br><br><input type="button" width="100%" value="Canvas"><br><br>
-    <input style="button"type="button" onClick="setColor('00ff00');" width="100%" value="Pen Size"><br><br>
+    <input style="button"type="button" onClick="setColor('00ff00');myFunction();" width="100%" value="Pen Size"><br><br>
     <input style="button"type="button" width="100%" value="Pen Color"><br><br>
-    <input style="button"type="button" width="100%" value="About"><br><br>
+    <input style="button"type="button" onclick="location.href='/about.html';"width="100%" value="About"><br><br>
   </ul>
+  <div id="mainbar" style="margin-left:0px;padding:1px 16px;height:1000px;">
+
+   <span class="popuptext" id="myPopup">
+
+
+   <input name="Color Picker" type="color"/>
+
+
+   </span>
+
+   <canvas id="drawing"></canvas>
+   <!-- <script src="/client.js"></script> -->
+ </div>
   <div style="margin-left:0px;padding:1px 16px;height:1000px;">
     <canvas id="drawing"></canvas>
     <script src="/client.js"></script>
