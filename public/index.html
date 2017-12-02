@@ -95,6 +95,7 @@ function on() {
 /* The actual popup */
 .popuptext {
     visibility: hidden;
+    position:fixed;
     width: 160px;
     background-color: #555;
     color: #fff;
@@ -110,7 +111,7 @@ function on() {
 /* Popup arrow */
 .popuptext::after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 40%;
   https://www.w3schools.com/  left: -3%;
     margin-left: -5px;
@@ -176,22 +177,21 @@ function myFunction() {
     <input style="button"type="button" width="100%" value="Pen Color"><br><br>
     <input style="button"type="button" onclick="location.href='/about.html';"width="100%" value="About"><br><br>
   </ul>
-  <div id="mainbar" style="margin-left:0px;padding:1px 16px;height:1000px;">
-
-   <span class="popuptext" id="myPopup">
-
-
-   <input name="Color Picker" type="color"/>
-
-
-   </span>
-
-   <canvas id="drawing"></canvas>
-   <!-- <script src="/client.js"></script> -->
- </div>
   <div style="margin-left:0px;padding:1px 16px;height:1000px;">
+    <div id="mainbar" style="margin-left:0px;padding:1px 16px;height:1000px;">
+
+     <span class="popuptext" id="myPopup">
+
+
+     <input name="Color Picker" type="color"/>
+
+
+     </span>
+
+     <canvas id="drawing"></canvas>
+   </div>
     <canvas id="drawing"></canvas>
-    <!-- <script src="/client.js"></script> -->
+    <script src="/client.js"></script>
   </div>
 </body>
 </html>
