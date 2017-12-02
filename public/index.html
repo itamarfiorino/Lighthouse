@@ -21,40 +21,33 @@ function on() {
   document.getElementById("overlay").style.display = "block";
   }
 
-  function off() {
-      document.getElementById("overlay").style.display = "none";
-  }
-function getCookie(name) {
-  var dc = document.cookie;
-  var prefix = name + "=";
-  var begin = dc.indexOf("; " + prefix);
-  if (begin == -1) {
-      begin = dc.indexOf(prefix);
-      if (begin != 0) return null;
-  }
-  else
-  {
-      begin += 2;
-      var end = document.cookie.indexOf(";", begin);
-      if (end == -1) {
-      end = dc.length;
-      }
-  }
-  // because unescape has been deprecated, replaced with decodeURI
-  //return unescape(dc.substring(begin + prefix.length, end));
-  return decodeURI(dc.substring(begin + prefix.length, end));
+/* The actual popup */
+.popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 75%;
+    left: 33%;
+    margin-left: -80px;
 }
 
-function doSomething() {
-  var myCookie = getCookie("MyCookie");
-  if (myCookie == null) {
-      on();
-      document.cookie = "myCookie=1";
-  }
-  else {
-      // do cookie exists stuff
-      document.cookie = "myCookie=1";
-  }
+/* Popup arrow */
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+  https://www.w3schools.com/  left: -3%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(90deg);
 }
 </script>
   <style>
@@ -80,20 +73,23 @@ function doSomething() {
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   font-family: "Tahoma";
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
-#cont{
-  background-color: #A56396;
-  position: absolute;
-  border: none;
-  top: 62%;
-  left: 50%;
-  padding: 10px;
-  font-size: 30px;
-  border-radius: 15px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  font-family: "Tahoma";
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
 }
 /* Popup container - can be anything you want */
 /* The actual popup */
@@ -149,6 +145,22 @@ function doSomething() {
 
 
 </style>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  if(popup.style.visibility == "visible"){
+    console.log("was visible");
+    popup.style.visibility='hidden';
+  }else{
+    console.log(popup.style.visibility);
+    popup.style.visibility='visible';
+  }
+}
+</script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 </head>
@@ -179,7 +191,7 @@ function doSomething() {
  </div>
   <div style="margin-left:0px;padding:1px 16px;height:1000px;">
     <canvas id="drawing"></canvas>
-    <script src="/client.js"></script>
+    <!-- <script src="/client.js"></script> -->
   </div>
 </body>
 </html>

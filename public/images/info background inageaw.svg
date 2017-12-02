@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1920"
+   height="1122.5197"
+   viewBox="0 0 507.99999 297"
+   version="1.1"
+   id="svg5946"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="info background inageaw.svg">
+  <defs
+     id="defs5940">
+    <filter
+       x="-0.228"
+       width="1.456"
+       y="-0.228"
+       height="1.456"
+       id="filter4376">
+      <feGaussianBlur
+         stdDeviation="4.75"
+         id="feGaussianBlur4378" />
+    </filter>
+    <linearGradient
+       id="linearGradient4145">
+      <stop
+         offset="0"
+         id="stop4147"
+         stop-color="#ffff22" />
+      <stop
+         offset="1"
+         id="stop4149"
+         stop-opacity="0.793814"
+         stop-color="#ffff71" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3162">
+      <stop
+         offset="0"
+         id="stop3164"
+         stop-color="#8bcbff" />
+      <stop
+         offset="1"
+         id="stop3166"
+         stop-color="#0081ed" />
+    </linearGradient>
+    <radialGradient
+       xlink:href="#linearGradient4145"
+       id="radialGradient4657"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(3.97698,0,0,3.52,2248.84,35)"
+       cx="-50"
+       cy="25"
+       fx="-50"
+       fy="25"
+       r="25" />
+    <radialGradient
+       xlink:href="#linearGradient3162"
+       id="radialGradient2218"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(8.51047, -0.684247, 0.0921219, 5.51606, 116.792, 170.884)"
+       cx="78.461044"
+       cy="-5.606602"
+       fx="78.461044"
+       fy="-5.606602"
+       r="50" />
+    <linearGradient
+       id="linearGradient-1"
+       y2="50%"
+       x2="-2.48949813e-15%"
+       y1="50%"
+       x1="100%">
+      <stop
+         id="stop7224"
+         offset="0%"
+         stop-opacity="0.670487998"
+         stop-color="#FFFFAB" />
+      <stop
+         id="stop7226"
+         offset="100%"
+         stop-opacity="0"
+         stop-color="#FFEF72" />
+    </linearGradient>
+    <polygon
+       points="15.1803805 0 76.5849653 0 92.2647108 211.971254 0.110068003 211.971254"
+       id="path-2" />
+    <rect
+       height="47.180153"
+       width="60.6208044"
+       y="0.100299311"
+       x="0.19818637"
+       id="path-4" />
+    <polygon
+       points="5.43744602 51.3191917 42.7805818 26.4133579 80.1237195 51.3191917 80.1237195 64.5881397 5.43744602 64.5881397"
+       id="path-6" />
+    <filter
+       id="filter-7"
+       filterUnits="objectBoundingBox"
+       height="200%"
+       width="200%"
+       y="-50%"
+       x="-50%">
+      <feOffset
+         id="feOffset7232"
+         result="shadowOffsetInner1"
+         in="SourceAlpha"
+         dy="0"
+         dx="-16" />
+      <feComposite
+         id="feComposite7234"
+         result="shadowInnerInner1"
+         k3="1"
+         k2="-1"
+         operator="arithmetic"
+         in2="SourceAlpha"
+         in="shadowOffsetInner1" />
+      <feColorMatrix
+         id="feColorMatrix7236"
+         in="shadowInnerInner1"
+         type="matrix"
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+    <polygon
+       points="5.6267012 51.5689369 42.7273904 51.5689369 80.3129747 51.5689369 80.3129747 64.8378849 5.6267012 64.8378849"
+       id="path-8" />
+    <filter
+       id="filter-9"
+       filterUnits="objectBoundingBox"
+       height="200%"
+       width="200%"
+       y="-50%"
+       x="-50%">
+      <feOffset
+         id="feOffset7240"
+         result="shadowOffsetInner1"
+         in="SourceAlpha"
+         dy="0"
+         dx="-16" />
+      <feComposite
+         id="feComposite7242"
+         result="shadowInnerInner1"
+         k3="1"
+         k2="-1"
+         operator="arithmetic"
+         in2="SourceAlpha"
+         in="shadowOffsetInner1" />
+      <feColorMatrix
+         id="feColorMatrix7244"
+         in="shadowInnerInner1"
+         type="matrix"
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+    <rect
+       rx="1.25745257"
+       height="26.8022041"
+       width="2.51490515"
+       y="0.585993817"
+       x="41.5231302"
+       id="path-10" />
+    <filter
+       id="filter-11"
+       filterUnits="objectBoundingBox"
+       height="200%"
+       width="200%"
+       y="-50%"
+       x="-50%">
+      <feOffset
+         id="feOffset7248"
+         result="shadowOffsetInner1"
+         in="SourceAlpha"
+         dy="0"
+         dx="-3" />
+      <feComposite
+         id="feComposite7250"
+         result="shadowInnerInner1"
+         k3="1"
+         k2="-1"
+         operator="arithmetic"
+         in2="SourceAlpha"
+         in="shadowOffsetInner1" />
+      <feColorMatrix
+         id="feColorMatrix7252"
+         in="shadowInnerInner1"
+         type="matrix"
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+    <rect
+       rx="4.75416354"
+       height="9.50832707"
+       width="97.6549968"
+       y="100.44239"
+       x="87.8759354"
+       id="path-12" />
+    <filter
+       id="filter-13"
+       filterUnits="objectBoundingBox"
+       height="200%"
+       width="200%"
+       y="-50%"
+       x="-50%">
+      <feOffset
+         id="feOffset7256"
+         result="shadowOffsetInner1"
+         in="SourceAlpha"
+         dy="0"
+         dx="-16" />
+      <feComposite
+         id="feComposite7258"
+         result="shadowInnerInner1"
+         k3="1"
+         k2="-1"
+         operator="arithmetic"
+         in2="SourceAlpha"
+         in="shadowOffsetInner1" />
+      <feColorMatrix
+         id="feColorMatrix7260"
+         in="shadowInnerInner1"
+         type="matrix"
+         values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" />
+    </filter>
+    <rect
+       rx="10.6883469"
+       height="33.9600316"
+       width="21.3766938"
+       y="0"
+       x="0"
+       id="path-14" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient-1"
+       id="linearGradient7449"
+       x1="172.3476"
+       y1="234.78812"
+       x2="3.0734984e-013"
+       y2="234.78812"
+       gradientTransform="scale(1.2403244,0.80624068)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient-1"
+       id="linearGradient7451"
+       x1="374.09568"
+       y1="234.37893"
+       x2="201.74807"
+       y2="234.37893"
+       gradientTransform="scale(1.2403244,0.80624068)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="888.30622"
+     inkscape:cy="438.15519"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g7037"
+     showgrid="false"
+     units="px"
+     showguides="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="986"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5943">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,8.392334e-6)">
+    <g
+       id="g7037"
+       transform="matrix(0.26458333,0,0,0.26458333,13.191138,179.11634)">
+      <title
+         id="title7020">Layer 1</title>
+      <rect
+         style="opacity:0.797;fill:#0076ff;fill-opacity:0.43349759"
+         id="rect7076"
+         width="1917.2865"
+         height="1126.4077"
+         x="-47.142708"
+         y="-680.86304"
+         ry="14.1421" />
+      <g
+         id="💻-Landing-Page"
+         transform="matrix(2.4109571,0,0,2.5957377,-182.70474,-915.98813)"
+         style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1">
+        <g
+           transform="translate(-121.08342,-67.296167)"
+           id="lighthouse-website__product">
+          <g
+             transform="translate(165.49573,117.66505)"
+             id="lighthouse">
+            <g
+               id="Group-14">
+              <g
+                 transform="translate(57.975424,0.259661)"
+                 id="aura"
+                 style="opacity:0.05">
+                <ellipse
+                   id="ellipse7266"
+                   ry="176.71794"
+                   rx="176.67209"
+                   cy="177.56754"
+                   cx="176.92038"
+                   style="fill:#ffcd72" />
+                <ellipse
+                   id="ellipse7268"
+                   ry="105.30383"
+                   rx="105.2765"
+                   cy="176.93864"
+                   cx="176.29164"
+                   style="fill:#fff072" />
+              </g>
+              <polygon
+                 points="3.8653523e-013,258.77256 3.8653523e-013,119.81891 213.76694,172.55433 213.76694,189.29573 213.76694,206.87421 "
+                 id="rays"
+                 style="opacity:0.5;fill:url(#linearGradient7449)" />
+              <polygon
+                 points="250.23306,258.44265 250.23306,119.489 464,172.22442 464,188.96583 464,206.5443 "
+                 transform="matrix(-1,0,0,1,714.23306,0)"
+                 id="polygon7272"
+                 style="opacity:0.5;fill:url(#linearGradient7451)" />
+            </g>
+            <g
+               transform="translate(98.317543,107.57102)"
+               id="Group-3">
+              <g
+                 transform="rotate(-10,1738.0181,-23.923092)"
+                 id="Group-11"
+                 style="fill:#443642">
+                <path
+                   id="land"
+                   d="m 80.573692,43.414451 c 0,-23.924827 -17.874637,-43.3197321 -39.924119,-43.3197321 -22.049483,0 -39.92411959,19.3949051 -39.92411959,43.3197321 25.40309459,0 39.92411959,0 79.84823859,0 z"
+                   inkscape:connector-curvature="0" />
+              </g>
+              <g
+                 transform="translate(0.52509,0.410713)"
+                 id="roof">
+                <path
+                   id="path7277"
+                   d="m 255.26287,367.27145 c 0,-40.98447 -51.51273,-74.20895 -115.05691,-74.20895 -63.544175,0 -115.056909,33.22448 -115.056909,74.20895 73.208918,0 115.056909,0 230.113819,0 z"
+                   inkscape:connector-curvature="0"
+                   style="fill:#4c3c4a" />
+                <path
+                   id="rock"
+                   d="m 85.506775,367.27145 c 0,-21.72872 -19.141344,-39.34332 -42.753387,-39.34332 C 19.141344,327.92813 0,345.54273 0,367.27145 c 27.203314,0 42.753388,0 85.506775,0 z"
+                   inkscape:connector-curvature="0"
+                   style="fill:#4d3c4a" />
+                <g
+                   transform="translate(90.768193,105.4368)"
+                   id="g7287">
+                  <g
+                     id="Group-13">
+                    <mask
+                       fill="white"
+                       id="mask-3">
+                      <use
+                         id="use7280"
+                         xlink:href="#path-2"
+                         x="0"
+                         y="0"
+                         width="100%"
+                         height="100%" />
+                    </mask>
+                    <use
+                       xlink:href="#path-2"
+                       id="tower-body"
+                       style="fill:#fefefe"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                    <path
+                       transform="matrix(-1,0,0,1,91.882724,0)"
+                       mask="url(#mask-3)"
+                       id="tower-body--alt"
+                       d="M 6.8240124,84.968092 83.989229,56.861314 86.769957,105.57973 4.7384664,138.37097 Z M -0.8229906,212.38548 1.2625558,184.2787 89.550686,152.42436 92.705715,212.38548 Z M 11.690287,4.0719482 h 70.213396 v 9.6923078 l -72.2989417,25.2961 z"
+                       inkscape:connector-curvature="0"
+                       style="fill:#ff684a" />
+                    <polygon
+                       points="77.049593,-3.4231924 19.408588,5.0088407 65.398752,15.314659 70.304369,215.80967 95.334791,215.80967 "
+                       mask="url(#mask-3)"
+                       id="Path-3"
+                       style="fill:#000000;fill-opacity:0.08999999" />
+                  </g>
+                </g>
+                <g
+                   transform="translate(105.5809,53.676983)"
+                   id="Group-2">
+                  <mask
+                     fill="white"
+                     id="mask-5">
+                    <use
+                       id="use7289"
+                       xlink:href="#path-4"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                  </mask>
+                  <use
+                     xlink:href="#path-4"
+                     id="beacon-section"
+                     style="fill:#ffcd72"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                  <polygon
+                     points="66.616275,6.3891941 0.19818637,12.049199 53.191342,18.966984 53.191343,47.163511 62.917744,47.163511 "
+                     mask="url(#mask-5)"
+                     id="polygon7293"
+                     style="fill:#000000;fill-opacity:0.08999999" />
+                </g>
+                <path
+                   id="path7296"
+                   d="m 121.64487,367.62363 c 0,-12.69824 -11.18618,-22.9922 -24.985037,-22.9922 -13.798855,0 -24.985036,10.29396 -24.985036,22.9922 15.897588,0 24.985036,0 49.970073,0 z"
+                   inkscape:connector-curvature="0"
+                   style="fill:#574454" />
+                <path
+                   id="path7298"
+                   d="m 275.05408,367.62363 c 0,-12.69824 -11.18618,-22.9922 -24.98503,-22.9922 -13.79886,0 -24.98504,10.29396 -24.98504,22.9922 15.89759,0 24.98504,0 49.97007,0 z"
+                   inkscape:connector-curvature="0"
+                   style="fill:#574454" />
+                <g
+                   transform="translate(92.364421)"
+                   id="Group">
+                  <g
+                     transform="translate(0.342244,88.01883)"
+                     id="rampe"
+                     style="stroke:#443642;stroke-width:2.87299967;stroke-linecap:round;stroke-linejoin:round">
+                    <path
+                       id="Path-2"
+                       d="M 0.81014835,17.091959 V 0.70800351"
+                       inkscape:connector-curvature="0" />
+                    <path
+                       id="path7301"
+                       d="M 0.81014835,4.0864615 H 84.671794"
+                       inkscape:connector-curvature="0" />
+                    <path
+                       id="path7303"
+                       d="M 29.165341,17.091959 V 0.70800351"
+                       inkscape:connector-curvature="0" />
+                    <path
+                       id="path7305"
+                       d="M 56.710385,17.091959 V 0.70800351"
+                       inkscape:connector-curvature="0" />
+                    <path
+                       id="path7307"
+                       d="M 85.065577,17.091959 V 0.70800351"
+                       inkscape:connector-curvature="0" />
+                  </g>
+                  <g
+                     id="corniche">
+                    <use
+                       id="use7310"
+                       xlink:href="#path-6"
+                       style="fill:#ff684a;fill-rule:evenodd"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                    <use
+                       id="use7312"
+                       xlink:href="#path-6"
+                       style="fill:#000000;fill-opacity:1;filter:url(#filter-7)"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                  </g>
+                  <g
+                     id="g7319">
+                    <use
+                       id="use7315"
+                       xlink:href="#path-8"
+                       style="fill:#e35d42;fill-rule:evenodd"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                    <use
+                       id="use7317"
+                       xlink:href="#path-8"
+                       style="fill:#000000;fill-opacity:1;filter:url(#filter-9)"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                  </g>
+                  <g
+                     id="bonnet">
+                    <use
+                       id="use7321"
+                       xlink:href="#path-10"
+                       style="fill:#443642;fill-rule:evenodd"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                    <use
+                       id="use7323"
+                       xlink:href="#path-10"
+                       style="fill:#000000;fill-opacity:1;filter:url(#filter-11)"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                  </g>
+                </g>
+                <g
+                   id="platform">
+                  <use
+                     id="use7327"
+                     xlink:href="#path-12"
+                     style="fill:#e7e7e7;fill-rule:evenodd"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                  <use
+                     id="use7329"
+                     xlink:href="#path-12"
+                     style="fill:#000000;fill-opacity:1;filter:url(#filter-13)"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                </g>
+              </g>
+              <g
+                 transform="translate(135.56864,250.89598)"
+                 id="house">
+                <polygon
+                   points="36.466125,67.920063 36.466125,22.640021 59.100271,0 81.734417,22.640021 81.734417,67.920063 "
+                   id="Rectangle-7"
+                   style="fill:#d02716" />
+                <rect
+                   height="45.280041"
+                   width="38.98103"
+                   y="22.64002"
+                   x="0"
+                   id="rect7334"
+                   style="fill:#e85e43" />
+                <polygon
+                   points="0,22.640021 23.801345,0 59.100271,0 36.466125,22.640021 "
+                   id="polygon7336"
+                   style="fill:#e7e7e7" />
+                <rect
+                   rx="5.6585364"
+                   height="18.866684"
+                   width="11.317073"
+                   y="32.702251"
+                   x="11.317073"
+                   id="Rectangle-8"
+                   style="fill:#443642" />
+                <path
+                   id="Combined-Shape"
+                   d="M 36.466125,22.640021 59.100271,0 81.734417,22.640021 V 67.920063 H 36.466125 Z M 49.04065,44.64694 c 0,-5.902217 4.784038,-10.686908 10.688347,-10.686908 5.903011,0 10.688347,4.793615 10.688347,10.686908 V 67.920063 H 49.04065 Z"
+                   inkscape:connector-curvature="0"
+                   style="fill:#d4563d" />
+                <g
+                   transform="translate(49.04065,33.960032)"
+                   id="Group-10">
+                  <mask
+                     fill="white"
+                     id="mask-15">
+                    <use
+                       id="use7340"
+                       xlink:href="#path-14"
+                       x="0"
+                       y="0"
+                       width="100%"
+                       height="100%" />
+                  </mask>
+                  <use
+                     xlink:href="#path-14"
+                     id="use7343"
+                     style="fill:#443642"
+                     x="0"
+                     y="0"
+                     width="100%"
+                     height="100%" />
+                  <polygon
+                     points="-1.2574526,21.382242 22.634146,35.21781 -1.2574526,35.21781 "
+                     mask="url(#mask-15)"
+                     id="Rectangle-10"
+                     style="fill:#4d3c4a" />
+                </g>
+              </g>
+              <rect
+                 rx="1.257779"
+                 height="2.515558"
+                 width="101.22493"
+                 y="317.371"
+                 x="86.031868"
+                 id="rect7348"
+                 style="fill:#4d3c4a" />
+              <rect
+                 rx="1.257779"
+                 height="2.515558"
+                 width="19.490515"
+                 y="316.9603"
+                 x="201.08878"
+                 id="rect7350"
+                 style="fill:#4d3c4a" />
+            </g>
+          </g>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:15.98949909px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.39973748"
+           x="370.48804"
+           y="277.75034"
+           id="text7455"
+           transform="scale(1.0376136,0.96374989)"><tspan
+             sodipodi:role="line"
+             id="tspan7453"
+             x="370.48804"
+             y="277.75034"
+             style="font-size:76.74959564px;fill:#333333;stroke-width:0.39973748">Lighthouse.</tspan></text>
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot7457"
+           style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"><flowRegion
+             id="flowRegion7459"><rect
+               id="rect7461"
+               width="20.203051"
+               height="72.73098"
+               x="236.3757"
+               y="1270.002" /></flowRegion><flowPara
+             id="flowPara7463"></flowPara></flowRoot>      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="1291.8497"
+         y="56.610371"
+         id="text7473"><tspan
+           sodipodi:role="line"
+           id="tspan7471"
+           x="1291.8497"
+           y="56.610371"
+           style="font-size:74.66666412px;text-align:center;text-anchor:middle;fill:#808080">Express your probems.</tspan><tspan
+           sodipodi:role="line"
+           x="1291.8497"
+           y="149.9437"
+           style="font-size:74.66666412px;text-align:center;text-anchor:middle;fill:#808080"
+           id="tspan7478">Get solutions.</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         x="2057.322"
+         y="564.74249"
+         id="text7498"><tspan
+           sodipodi:role="line"
+           id="tspan7496"
+           x="2057.322"
+           y="564.74249">ew</tspan></text>
+    </g>
+  </g>
+</svg>
