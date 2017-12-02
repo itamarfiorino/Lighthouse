@@ -1,0 +1,114 @@
+body {
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-align:center;
+    margin:0;
+}
+p {
+    margin:0;
+    padding:0;
+    text-align:left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: #A56396;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    vertical-align: middle;
+}
+li a {
+    padding: 10;
+    padding-top: 25%;
+    height: 70;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    vertical-align: middle;
+}
+li a.active {
+    background-color: #A56396;
+    color: white;
+    vertical-align: middle;
+}
+
+li a:hover {
+    background-color: #E086CB;
+    vertical-align: middle;
+}
+  #canvas {
+     display: block;
+     background-color: #FFFFFF
+  }
+  #overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  #text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: "Tahoma";
+  }
+  #cont{
+    background-color: #A56396;
+    position: absolute;
+    border: none;
+    top: 62%;
+    left: 50%;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    color: white;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-family: "Tahoma";
+  }
+    #canvas {
+       display: block;
+       background-color: #FFFFFF
+    }
+/*for boxes*/
+.square {
+    float:left;
+    position: relative;
+    width: 15%;
+    padding-bottom : 15%; /* = width for a 1:1 aspect ratio */
+    margin:5%;
+    background-color:#A5A5A5;
+    overflow:hidden;
+    border-radius: 2em
+}
+.content {
+    position:absolute;
+    height:85%; /* = 100% - 2*5% padding */
+    width:85%; /* = 100% - 2*5% padding */
+    padding: 7.5%;
+    text-align: center;
+}
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
