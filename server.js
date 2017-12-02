@@ -22,8 +22,9 @@ app.get('/', function (req, res) {
 io.on('connection', function(socket){
   console.log("Connection " + socket.id);
   for (var i in line_history) {
-    console.log(i);
-    socket.emit('draw_line', { line: line_history[i], color: i} );
+    for(var j in line_history[i]){
+      socket.emit('draw_line', { line: line_history[i], color: i} );
+    }
   }
   socket.on('draw_line', function (data) {
     try{line_history[data.color].push(data.line);}catch(err){
