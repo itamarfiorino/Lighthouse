@@ -2,17 +2,21 @@
 <html>
 <head>
   <script>
+    function changeSize() {
+      var size = document.getElementById("slider").value;
+      document.getElementById("circ").setAttribute("r", size);
+    }
   </script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 </head>
 <body>
   <ul style>
-    <li id="Home"><a class="active"><center><input type="image" onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "65"></center></a></li>
-    <input type="button" width="100%" value="Test"><br>
-    <input type="button" width="100%" value="Test"><br>
-    <input type="button" width="100%" value="Test"><br>
-    <input type="button" width="100%" value="Test"><br>
+    <li id="Home"><a class="active"><center><input type="image" onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "100"></center></a></li>
+    <br><br><br><input type="button" width="100%" value="Canvas"><br><br>
+    <input style="button"type="button" width="100%" value="Pen Size"><br><br>
+    <input style="button"type="button" width="100%" value="Pen Color"><br><br>
+    <input style="button"type="button" width="100%" value="About"><br><br>
   </ul>
   <div style="margin-left:0px;padding:1px 16px;height:1000px;">
     <div style="margin-left:100px;padding:1px 16px;height:1000px;">
@@ -37,9 +41,10 @@
           <figcaption>Tarun Mattikalli</figcaption>
         </figure>
       </div>
-
-      
-
+      <input id="slider" type="range" min="1" max="31" oninput="changeSize();"><br><br><br>
+      <svg height="100" width="100">
+        <circle cx="50" cy="50" r="16" stroke="black" stroke-width="3" fill="black" id="circ">
+      </svg>
     </div>
 </body>
 </html>
