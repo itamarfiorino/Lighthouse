@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-function on() {
-  document.getElementById("overlay").style.display = "block";
-  }
+<style>
+/* Popup container - can be anything you want */
 
-  function off() {
-      document.getElementById("overlay").style.display = "none";
-  }
-function getCookie(name) {
-  var dc = document.cookie;
-  var prefix = name + "=";
-  var begin = dc.indexOf("; " + prefix);
-  if (begin == -1) {
-      begin = dc.indexOf(prefix);
-      if (begin != 0) return null;
-  }
-  else
-  {
-      begin += 2;
-      var end = document.cookie.indexOf(";", begin);
-      if (end == -1) {
-      end = dc.length;
-      }
-  }
-  // because unescape has been deprecated, replaced with decodeURI
-  //return unescape(dc.substring(begin + prefix.length, end));
-  return decodeURI(dc.substring(begin + prefix.length, end));
+/* The actual popup */
+.popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: fixed;
+    z-index: 1;
+    bottom: 75%;
+    left: 33%;
+    margin-left: -80px;
 }
 
-function doSomething() {
-  var myCookie = getCookie("MyCookie");
-  if (myCookie == null) {
-      on();
-      document.cookie = "myCookie=1";
-  }
-  else {
-      // do cookie exists stuff
-      document.cookie = "myCookie=1";
+/* Popup arrow */
+.popuptext::after {
+    content: "";
+    position: absolute;
+    top: 40%;
+  https://www.w3schools.com/  left: -3%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+    transform: rotate(90deg);
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+</style>
+
+
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  if(popup.style.visibility == "visible"){
+    console.log("was visible");
+    popup.style.visibility='hidden';
+  }else{
+    console.log(popup.style.visibility);
+    popup.style.visibility='visible';
   }
 }
 </script>
-  <style>#overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0,0,0,0.8); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-  cursor: pointer; /* Add a pointer on hover */
-  }
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  font-family: "Tahoma";
-}
-#cont{
-  background-color: #A56396;
-  position: absolute;
-  border: none;
-  top: 62%;
-  left: 50%;
-  padding: 10px;
-  font-size: 30px;
-  border-radius: 15px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  font-family: "Tahoma";
-}
-</style>
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
 </head>
-<div id="overlay">
-    <div id="text">Welcome to Lighthouse</div>
-    <button onclick = "off()" id="cont">Continue</button>
-</div>
-<body onload=doSomething()>
-  <ul style padding="20px">
-    <li id="Home"><a class="active"><center><img  onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "100"></center></a></li>
-    <br><br><br><input type="button" width="100%" value="Canvas"><br><br>
-    <input style="button"type="button" onClick="setColor('00ff00');" width="100%" value="Pen Size"><br><br>
-    <input style="button"type="button" width="100%" value="Pen Color"><br><br>
-    <input style="button"type="button" width="100%" value="About"><br><br>
+<body>
+  <ul style>
+    <li id="Home"><a class="active"><center><input type="image" onclick="location.href='/';" src="images\001-navigational.svg" alt="Lighthouse" height = "65"></center></a></li>
+    <input type="button" onClick="myFunction()" width="100%" value="Test"><br>
+    <input type="button" width="100%" value="Test"><br>
+    <input type="button" width="100%" value="Test"><br>
+    <input type="button" width="100%" value="Test"><br>
+
+
+
+
   </ul>
-  <div style="margin-left:0px;padding:1px 16px;height:1000px;">
+  <div id="mainbar" style="margin-left:0px;padding:1px 16px;height:1000px;">
+
+    <span class="popuptext" id="myPopup">
+
+
+    <input name="Color Picker" type="color"/>
+
+
+    </span>
+
     <canvas id="drawing"></canvas>
-    <script src="/client.js"></script>
+    <!-- <script src="/client.js"></script> -->
   </div>
 </body>
 </html>
