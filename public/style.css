@@ -116,3 +116,13 @@ li a:hover {
     display:table-cell;
     vertical-align:middle;
 }
+figure {
+    display: inline-block;
+    margin: auto;
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}
