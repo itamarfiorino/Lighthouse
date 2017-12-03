@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #000000;
     text-align:center;
-    /*overflow: hidden*/
+    overflow: hidden;
     margin:0;
 }
 p {
@@ -126,7 +126,7 @@ ul input:hover{
     padding-bottom : 25%; /* = width for a 1:1 aspect ratio */
     margin:5%;
     background-color:#A5A5A5;
-    /*overflow:hidden;*/
+    overflow:hidden;
     border-radius: 2em
 }
 .content {

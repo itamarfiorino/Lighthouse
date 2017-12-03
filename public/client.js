@@ -1,9 +1,15 @@
 var canvas  = document.getElementById('drawing');
 var context = canvas.getContext('2d');
 context.strokeStyle = "#fff";
-function setColor(hex){
-  var styleStr = "#" + hex
+context.lineWidth = 6;
+function setColor(){
+  var styleStr = document.getElementById("myColor").value;
   context.strokeStyle = styleStr;
+  changeSize();
+}
+function setSize(size){
+  context.lineWidth = size;
+  setColor();
 }
 //create socket connection
 document.addEventListener("DOMContentLoaded", function() {
@@ -35,7 +41,6 @@ document.addEventListener("DOMContentLoaded", function() {
   socket.on('draw_line', function (data) {
     var line = data.line;
     context.beginPath();
-    context.lineWidth = 6;
     context.lineCap="round";
     context.strokeStyle = data.color;
     context.moveTo(line[0].x * width, line[0].y * height);
