@@ -24,7 +24,6 @@ app.get('/about', function (req, res) {
 });
 io.on('connection', function(socket){
   console.log("Connection " + socket.id);
-  console.log("History: " + JSON.stringify(line_history));
   for(var s in line_history)
     for (var i in line_history[s]) {
       if(i%2==1){
@@ -35,7 +34,6 @@ io.on('connection', function(socket){
     try{line_history[data.size].push(data.color);}catch(err){
       line_history[data.size] = [data.color];
     }
-    console.log(line_history[data.size]);
     line_history[data.size].push(data.line);
     io.emit('draw_line', { line: data.line , color: data.color, size:data.size});
   });
