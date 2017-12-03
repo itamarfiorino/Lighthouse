@@ -39,17 +39,19 @@ document.addEventListener("DOMContentLoaded", function() {
     mouse.move = true;
   };
   socket.on('draw_line', function (data) {
+    console.log(JSON.stringify(data));
     var line = data.line;
     context.beginPath();
     context.lineCap="round";
     context.strokeStyle = data.color;
+    context.lineWidth=data.size;
     context.moveTo(line[0].x * width, line[0].y * height);
     context.lineTo(line[1].x * width, line[1].y * height);
     context.stroke();
   });
   function mainLoop() {
     if (mouse.click && mouse.move && mouse.pos_prev) {
-      socket.emit('draw_line', { line: [ mouse.pos, mouse.pos_prev ], color: context.strokeStyle });
+      socket.emit('draw_line', { line: [ mouse.pos, mouse.pos_prev ], color: context.strokeStyle , size:context.lineWidth});
       mouse.move = false;
     }
     mouse.pos_prev = {x: mouse.pos.x, y: mouse.pos.y};

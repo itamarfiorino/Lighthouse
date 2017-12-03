@@ -24,15 +24,19 @@ app.get('/about', function (req, res) {
 });
 io.on('connection', function(socket){
   console.log("Connection " + socket.id);
-  for (var i in line_history) {
-    for(var j in line_history[i]){
-      socket.emit('draw_line', { line: line_history[i][j], color: i} );
+  console.log("History: " + JSON.stringify(line_history));
+  for(var s in line_history)
+    for (var i in line_history[s]) {
+      if(i%2==1){
+        socket.emit('draw_line', { line: line_history[s][i], color: line_history[s][i-1], size:s} );
+      }
     }
-  }
   socket.on('draw_line', function (data) {
-    try{line_history[data.color].push(data.line);}catch(err){
-      line_history[data.color]=[data.line];
+    try{line_history[data.size].push(data.color);}catch(err){
+      line_history[data.size] = [data.color];
     }
-    io.emit('draw_line', { line: data.line , color: data.color});
+    console.log(line_history[data.size]);
+    line_history[data.size].push(data.line);
+    io.emit('draw_line', { line: data.line , color: data.color, size:data.size});
   });
 });
